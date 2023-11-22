@@ -181,7 +181,9 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem_BuscarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_BuscarPlantelActionPerformed
-        // TODO add your handling code here:
+        Form_BuscarJugador search = new Form_BuscarJugador();
+        search.show();
+       
     }//GEN-LAST:event_jMenuItem_BuscarPlantelActionPerformed
 
     private void jMenuItem_HorarioPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_HorarioPartidoActionPerformed
