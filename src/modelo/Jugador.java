@@ -12,14 +12,14 @@ import java.util.Date;
  */
 public class Jugador extends Persona {
     private int codJugador; 
-    private int posicion;
+    private String posicion;
     private Date fechNac;
     private int numGol;
 
     public Jugador() {
     }
 
-    public Jugador(int codJugador, int posicion, Date fechNac, int numGol, int rutPersona, String dv, String pNombre, String apPaterno, String apMaterno, int telefono) {
+    public Jugador(int codJugador, String posicion, Date fechNac, int numGol, int rutPersona, String dv, String pNombre, String apPaterno, String apMaterno, int telefono) {
         super(rutPersona, dv, pNombre, apPaterno, apMaterno, telefono);
         this.codJugador = codJugador;
         this.posicion = posicion;
@@ -35,11 +35,11 @@ public class Jugador extends Persona {
         this.codJugador = codJugador;
     }
 
-    public int getPosicion() {
+    public String getPosicion() {
         return posicion;
     }
 
-    public void setPosicion(int posicion) {
+    public void setPosicion(String posicion) {
         this.posicion = posicion;
     }
 
@@ -59,5 +59,5 @@ public class Jugador extends Persona {
         this.numGol = numGol;
     }
 
- 
+  
 }
