@@ -194,14 +194,13 @@ public class Form_BuscarSocio extends javax.swing.JFrame {
             } catch (Exception ex) {
                 Logger.getLogger(Form_AgregarJugador.class.getName()).log(Level.SEVERE, null, ex);
             }
-                ruttab = jugador.getRutPersona();
-                nombre = jugador.getpNombre();
-                apellido1 = jugador.getApPaterno();
-                apellido2 = jugador.getApMaterno();
-                posicion = jugador.getPosicion();
-                division = jugador.getDivision();
+                ruttab = socio.getRutPersona();
+                nombre = socio.getpNombre();
+                apellido1 = socio.getApPaterno();
+                apellido2 = socio.getApMaterno();
+                direccion = socio.getDireccion();
 
-                modelo.addRow(new Object[]{ruttab, nombre, apellido1, apellido2, posicion,division});
+                modelo.addRow(new Object[]{ruttab, nombre, apellido1, apellido2, direccion});
         }
 
     }//GEN-LAST:event_jButton_BuscarSocioActionPerformed

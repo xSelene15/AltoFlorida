@@ -43,6 +43,11 @@ public class Form_EliminarJugador extends javax.swing.JFrame {
         jLabel_TituloEliminPlantel.setText("Eliminar Plantel");
 
         jTextField1.setText("Ingrese el nombre...");
+        jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField1FocusGained(evt);
+            }
+        });
 
         jButton1.setText("Buscar");
 
@@ -131,6 +136,10 @@ public class Form_EliminarJugador extends javax.swing.JFrame {
     private void jButton_AtrasElimPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AtrasElimPlantelActionPerformed
         this.dispose();
     }//GEN-LAST:event_jButton_AtrasElimPlantelActionPerformed
+
+    private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1FocusGained
 
 //    /**
 //     * @param args the command line arguments
