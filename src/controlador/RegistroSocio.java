@@ -100,7 +100,7 @@ public class RegistroSocio {
         
     }
     
-    public Socio buscarPorId(int codSocio) throws Exception
+    public Socio buscarPorCod(int codSocio) throws Exception
     {
         Socio socio = new Socio();
         try {
