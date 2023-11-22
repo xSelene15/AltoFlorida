@@ -29,18 +29,18 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu5 = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenu_Plantel = new javax.swing.JMenu();
+        jMenuItem_BuscarPlantel = new javax.swing.JMenuItem();
+        jMenuItem_RegistrarPlantel = new javax.swing.JMenuItem();
+        jMenuItem_EliminarPlantel = new javax.swing.JMenuItem();
+        jMenu_Socio = new javax.swing.JMenu();
+        jMenuItem_BuscarSocio = new javax.swing.JMenuItem();
+        jMenuItem_RegistrarSocio = new javax.swing.JMenuItem();
+        jMenuItem_EliminarSocio = new javax.swing.JMenuItem();
+        jMenu_Horario = new javax.swing.JMenu();
+        jMenuItem_HorarioPartido = new javax.swing.JMenuItem();
+        jMenu_Extra = new javax.swing.JMenu();
+        jMenuItem_ExtrInfor = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,81 +71,86 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Football_2-61_icon-icons.com_72117.png"))); // NOI18N
-        jMenu5.setText("Plantel");
+        jMenu_Plantel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Football_2-61_icon-icons.com_72117.png"))); // NOI18N
+        jMenu_Plantel.setText("Plantel");
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/xmag_search_find_export_locate_5984.png"))); // NOI18N
-        jMenuItem2.setText("Buscar ");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem_BuscarPlantel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/xmag_search_find_export_locate_5984.png"))); // NOI18N
+        jMenuItem_BuscarPlantel.setText("Buscar ");
+        jMenuItem_BuscarPlantel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                jMenuItem_BuscarPlantelActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem2);
+        jMenu_Plantel.add(jMenuItem_BuscarPlantel);
 
-        jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/business_application_addmale_useradd_insert_add_user_client_2312.png"))); // NOI18N
-        jMenuItem8.setText("Agregar");
-        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem_RegistrarPlantel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/business_application_addmale_useradd_insert_add_user_client_2312.png"))); // NOI18N
+        jMenuItem_RegistrarPlantel.setText("Registrar");
+        jMenuItem_RegistrarPlantel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem8ActionPerformed(evt);
+                jMenuItem_RegistrarPlantelActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem8);
+        jMenu_Plantel.add(jMenuItem_RegistrarPlantel);
 
-        jMenuItem9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/delete_delete_deleteusers_delete_male_user_maleclient_2348.png"))); // NOI18N
-        jMenuItem9.setText("Eliminar");
-        jMenu5.add(jMenuItem9);
+        jMenuItem_EliminarPlantel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/delete_delete_deleteusers_delete_male_user_maleclient_2348.png"))); // NOI18N
+        jMenuItem_EliminarPlantel.setText("Eliminar");
+        jMenu_Plantel.add(jMenuItem_EliminarPlantel);
 
-        jMenuBar1.add(jMenu5);
+        jMenuBar1.add(jMenu_Plantel);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/businessapplication_edit_male_user_thepencil_theclient_negocio_2321.png"))); // NOI18N
-        jMenu2.setText("Socios ");
+        jMenu_Socio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/businessapplication_edit_male_user_thepencil_theclient_negocio_2321.png"))); // NOI18N
+        jMenu_Socio.setText("Socios ");
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/xmag_search_find_export_locate_5984.png"))); // NOI18N
-        jMenuItem3.setText("Buscar");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem_BuscarSocio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/xmag_search_find_export_locate_5984.png"))); // NOI18N
+        jMenuItem_BuscarSocio.setText("Buscar");
+        jMenuItem_BuscarSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                jMenuItem_BuscarSocioActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem3);
+        jMenu_Socio.add(jMenuItem_BuscarSocio);
 
-        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/business_application_addmale_useradd_insert_add_user_client_2312.png"))); // NOI18N
-        jMenuItem4.setText("Agregar");
-        jMenu2.add(jMenuItem4);
-
-        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/delete_delete_deleteusers_delete_male_user_maleclient_2348.png"))); // NOI18N
-        jMenuItem5.setText("Eliminar");
-        jMenu2.add(jMenuItem5);
-
-        jMenuBar1.add(jMenu2);
-
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cup_icon-icons.com_55322.png"))); // NOI18N
-        jMenu4.setText("Horarios ");
-
-        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1490877818-sport-badges05_82419.png"))); // NOI18N
-        jMenuItem7.setText("Partidos");
-        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem_RegistrarSocio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/business_application_addmale_useradd_insert_add_user_client_2312.png"))); // NOI18N
+        jMenuItem_RegistrarSocio.setText("Registrar");
+        jMenuItem_RegistrarSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem7ActionPerformed(evt);
+                jMenuItem_RegistrarSocioActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem7);
+        jMenu_Socio.add(jMenuItem_RegistrarSocio);
 
-        jMenuBar1.add(jMenu4);
+        jMenuItem_EliminarSocio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/delete_delete_deleteusers_delete_male_user_maleclient_2348.png"))); // NOI18N
+        jMenuItem_EliminarSocio.setText("Eliminar");
+        jMenu_Socio.add(jMenuItem_EliminarSocio);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/3844437-hamburger-list-menu-more-navigation_110311.png"))); // NOI18N
-        jMenu3.setText("Extras");
+        jMenuBar1.add(jMenu_Socio);
 
-        jMenuItem6.setText("Informacion ");
-        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+        jMenu_Horario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cup_icon-icons.com_55322.png"))); // NOI18N
+        jMenu_Horario.setText("Horarios ");
+
+        jMenuItem_HorarioPartido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/1490877818-sport-badges05_82419.png"))); // NOI18N
+        jMenuItem_HorarioPartido.setText("Partidos");
+        jMenuItem_HorarioPartido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem6ActionPerformed(evt);
+                jMenuItem_HorarioPartidoActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem6);
+        jMenu_Horario.add(jMenuItem_HorarioPartido);
 
-        jMenuBar1.add(jMenu3);
+        jMenuBar1.add(jMenu_Horario);
+
+        jMenu_Extra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/3844437-hamburger-list-menu-more-navigation_110311.png"))); // NOI18N
+        jMenu_Extra.setText("Extras");
+
+        jMenuItem_ExtrInfor.setText("Informacion ");
+        jMenuItem_ExtrInfor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_ExtrInforActionPerformed(evt);
+            }
+        });
+        jMenu_Extra.add(jMenuItem_ExtrInfor);
+
+        jMenuBar1.add(jMenu_Extra);
 
         setJMenuBar(jMenuBar1);
 
@@ -163,31 +168,35 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void jMenuItem_BuscarSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_BuscarSocioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_jMenuItem_BuscarSocioActionPerformed
 
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+    private void jMenuItem_ExtrInforActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ExtrInforActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
+    }//GEN-LAST:event_jMenuItem_ExtrInforActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
        System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void jMenuItem_BuscarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_BuscarPlantelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_jMenuItem_BuscarPlantelActionPerformed
 
-    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+    private void jMenuItem_HorarioPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_HorarioPartidoActionPerformed
     
         
-    }//GEN-LAST:event_jMenuItem7ActionPerformed
+    }//GEN-LAST:event_jMenuItem_HorarioPartidoActionPerformed
 
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+    private void jMenuItem_RegistrarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_RegistrarPlantelActionPerformed
         Form_AgregarJugador jugador = new Form_AgregarJugador();
         jugador.show();
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
+    }//GEN-LAST:event_jMenuItem_RegistrarPlantelActionPerformed
+
+    private void jMenuItem_RegistrarSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_RegistrarSocioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem_RegistrarSocioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -205,20 +214,20 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JMenuItem jMenuItem_BuscarPlantel;
+    private javax.swing.JMenuItem jMenuItem_BuscarSocio;
+    private javax.swing.JMenuItem jMenuItem_EliminarPlantel;
+    private javax.swing.JMenuItem jMenuItem_EliminarSocio;
+    private javax.swing.JMenuItem jMenuItem_ExtrInfor;
+    private javax.swing.JMenuItem jMenuItem_HorarioPartido;
+    private javax.swing.JMenuItem jMenuItem_RegistrarPlantel;
+    private javax.swing.JMenuItem jMenuItem_RegistrarSocio;
+    private javax.swing.JMenu jMenu_Extra;
+    private javax.swing.JMenu jMenu_Horario;
+    private javax.swing.JMenu jMenu_Plantel;
+    private javax.swing.JMenu jMenu_Socio;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 ////class FondoPanel extends Jpanel

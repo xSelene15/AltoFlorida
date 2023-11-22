@@ -53,69 +53,54 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="118" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="31" max="32767" attributes="0"/>
-                          <Component id="jText_FecNacDia" min="-2" pref="38" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jText_FecNacMes" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jText_FecNacAnio" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                          <Component id="jLabel_TelRegSocio" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="jText_TelRegSocio" min="-2" pref="80" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel_ApellidoPaterno" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jText_Appaterno" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel_NombreRegSocio" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="jTextField_NombreRegSocio" min="-2" pref="108" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel_ApMaterRegSocio" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jText_ApmaternoRegSocio" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel_ApPaterRegSocio" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jText_AppaternoRegSocio" min="-2" pref="82" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jButton_IngRegSocio" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                                  <Component id="jButton_SalirRegSocio" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel_Nombre" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Component id="jTextField_Nombre" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel_Rut" min="-2" pref="40" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel_RutRegSocio" min="-2" pref="40" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jText_Rut" min="-2" pref="167" max="-2" attributes="0"/>
+                                  <Component id="jText_RutRegSocio" min="-2" pref="167" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel_Rut1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jText_DV" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jText_Posicion" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jText_Telefono" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel_ApellidoMaterno" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jText_Apmaterno" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
-                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="200" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jText_DVRegSocio" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace min="200" max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jLabel_TituloIngresarSocio" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="149" max="32767" attributes="0"/>
+                  <Component id="jLabel_TituloRegistrarSocio" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -124,65 +109,51 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                  <Component id="jLabel_TituloIngresarSocio" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel_TituloRegistrarSocio" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="jText_DV" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel_Rut1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jText_Rut" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="jLabel_Rut" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jText_DVRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_Rut1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jText_RutRegSocio" alignment="1" min="-2" pref="22" max="-2" attributes="0"/>
+                      <Component id="jLabel_RutRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel_Nombre" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField_Nombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_NombreRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_NombreRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel_ApellidoPaterno" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jText_Appaterno" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_ApPaterRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jText_AppaternoRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel_ApellidoMaterno" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jText_Apmaterno" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_ApMaterRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jText_ApmaternoRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jText_Telefono" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_TelRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jText_TelRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace pref="52" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jText_Posicion" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton_IngRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton_SalirRegSocio" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jText_FecNacDia" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jText_FecNacMes" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jText_FecNacAnio" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="27" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="jText_Rut">
+        <Component class="javax.swing.JTextField" name="jText_RutRegSocio">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_RutActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_RutRegSocioActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel_Rut">
+        <Component class="javax.swing.JLabel" name="jLabel_RutRegSocio">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Bookman Old Style" size="14" style="1"/>
@@ -190,9 +161,9 @@
             <Property name="text" type="java.lang.String" value="Rut"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jText_DV">
+        <Component class="javax.swing.JTextField" name="jText_DVRegSocio">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel_Nombre">
+        <Component class="javax.swing.JLabel" name="jLabel_NombreRegSocio">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Bookman Old Style" size="14" style="1"/>
@@ -200,7 +171,7 @@
             <Property name="text" type="java.lang.String" value="Nombre"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel_ApellidoPaterno">
+        <Component class="javax.swing.JLabel" name="jLabel_ApPaterRegSocio">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Bookman Old Style" size="14" style="1"/>
@@ -208,7 +179,7 @@
             <Property name="text" type="java.lang.String" value="Apellido Paterno "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel_ApellidoMaterno">
+        <Component class="javax.swing.JLabel" name="jLabel_ApMaterRegSocio">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Bookman Old Style" size="14" style="1"/>
@@ -216,7 +187,7 @@
             <Property name="text" type="java.lang.String" value="Apellido Materno"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="jLabel_TelRegSocio">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Bookman Old Style" size="14" style="1"/>
@@ -224,79 +195,43 @@
             <Property name="text" type="java.lang.String" value="Tel&#xe9;fono"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField_Nombre">
+        <Component class="javax.swing.JTextField" name="jTextField_NombreRegSocio">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_NombreActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_NombreRegSocioActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel2">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Bookman Old Style" size="14" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Posici&#xf3;n"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jText_Appaterno">
+        <Component class="javax.swing.JTextField" name="jText_AppaternoRegSocio">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_AppaternoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_AppaternoRegSocioActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jText_Apmaterno">
+        <Component class="javax.swing.JTextField" name="jText_ApmaternoRegSocio">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_ApmaternoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_ApmaternoRegSocioActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jText_Telefono">
+        <Component class="javax.swing.JTextField" name="jText_TelRegSocio">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_TelefonoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_TelRegSocioActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jText_Posicion">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_PosicionActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Bookman Old Style" size="14" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Fecha Nacimiento"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jText_FecNacDia">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_FecNacDiaActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jText_FecNacMes">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_FecNacMesActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jText_FecNacAnio">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jText_FecNacAnioActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="jButton_IngRegSocio">
           <Properties>
             <Property name="text" type="java.lang.String" value="Ingresar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_IngRegSocioActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="jButton_SalirRegSocio">
           <Properties>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_SalirRegSocioActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel_TituloIngresarSocio">
+        <Component class="javax.swing.JLabel" name="jLabel_TituloRegistrarSocio">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -304,7 +239,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Bookman Old Style" size="36" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Ingresar Socio"/>
+            <Property name="text" type="java.lang.String" value="Registrar Socio"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel_Rut1">

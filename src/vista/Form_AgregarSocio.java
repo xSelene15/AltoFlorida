@@ -27,26 +27,20 @@ public class Form_AgregarSocio extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jText_Rut = new javax.swing.JTextField();
-        jLabel_Rut = new javax.swing.JLabel();
-        jText_DV = new javax.swing.JTextField();
-        jLabel_Nombre = new javax.swing.JLabel();
-        jLabel_ApellidoPaterno = new javax.swing.JLabel();
-        jLabel_ApellidoMaterno = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField_Nombre = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jText_Appaterno = new javax.swing.JTextField();
-        jText_Apmaterno = new javax.swing.JTextField();
-        jText_Telefono = new javax.swing.JTextField();
-        jText_Posicion = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jText_FecNacDia = new javax.swing.JTextField();
-        jText_FecNacMes = new javax.swing.JTextField();
-        jText_FecNacAnio = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel_TituloIngresarSocio = new javax.swing.JLabel();
+        jText_RutRegSocio = new javax.swing.JTextField();
+        jLabel_RutRegSocio = new javax.swing.JLabel();
+        jText_DVRegSocio = new javax.swing.JTextField();
+        jLabel_NombreRegSocio = new javax.swing.JLabel();
+        jLabel_ApPaterRegSocio = new javax.swing.JLabel();
+        jLabel_ApMaterRegSocio = new javax.swing.JLabel();
+        jLabel_TelRegSocio = new javax.swing.JLabel();
+        jTextField_NombreRegSocio = new javax.swing.JTextField();
+        jText_AppaternoRegSocio = new javax.swing.JTextField();
+        jText_ApmaternoRegSocio = new javax.swing.JTextField();
+        jText_TelRegSocio = new javax.swing.JTextField();
+        jButton_IngRegSocio = new javax.swing.JButton();
+        jButton_SalirRegSocio = new javax.swing.JButton();
+        jLabel_TituloRegistrarSocio = new javax.swing.JLabel();
         jLabel_Rut1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -54,98 +48,68 @@ public class Form_AgregarSocio extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 102));
         jPanel2.setPreferredSize(new java.awt.Dimension(600, 400));
 
-        jText_Rut.addActionListener(new java.awt.event.ActionListener() {
+        jText_RutRegSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_RutActionPerformed(evt);
+                jText_RutRegSocioActionPerformed(evt);
             }
         });
 
-        jLabel_Rut.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel_Rut.setText("Rut");
+        jLabel_RutRegSocio.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
+        jLabel_RutRegSocio.setText("Rut");
 
-        jLabel_Nombre.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel_Nombre.setText("Nombre");
+        jLabel_NombreRegSocio.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
+        jLabel_NombreRegSocio.setText("Nombre");
 
-        jLabel_ApellidoPaterno.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel_ApellidoPaterno.setText("Apellido Paterno ");
+        jLabel_ApPaterRegSocio.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
+        jLabel_ApPaterRegSocio.setText("Apellido Paterno ");
 
-        jLabel_ApellidoMaterno.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel_ApellidoMaterno.setText("Apellido Materno");
+        jLabel_ApMaterRegSocio.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
+        jLabel_ApMaterRegSocio.setText("Apellido Materno");
 
-        jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel1.setText("Teléfono");
+        jLabel_TelRegSocio.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
+        jLabel_TelRegSocio.setText("Teléfono");
 
-        jTextField_Nombre.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_NombreRegSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_NombreActionPerformed(evt);
+                jTextField_NombreRegSocioActionPerformed(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel2.setText("Posición");
-
-        jText_Appaterno.addActionListener(new java.awt.event.ActionListener() {
+        jText_AppaternoRegSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_AppaternoActionPerformed(evt);
+                jText_AppaternoRegSocioActionPerformed(evt);
             }
         });
 
-        jText_Apmaterno.addActionListener(new java.awt.event.ActionListener() {
+        jText_ApmaternoRegSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_ApmaternoActionPerformed(evt);
+                jText_ApmaternoRegSocioActionPerformed(evt);
             }
         });
 
-        jText_Telefono.addActionListener(new java.awt.event.ActionListener() {
+        jText_TelRegSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_TelefonoActionPerformed(evt);
+                jText_TelRegSocioActionPerformed(evt);
             }
         });
 
-        jText_Posicion.addActionListener(new java.awt.event.ActionListener() {
+        jButton_IngRegSocio.setText("Ingresar");
+        jButton_IngRegSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_PosicionActionPerformed(evt);
+                jButton_IngRegSocioActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel3.setText("Fecha Nacimiento");
-
-        jText_FecNacDia.addActionListener(new java.awt.event.ActionListener() {
+        jButton_SalirRegSocio.setText("Salir");
+        jButton_SalirRegSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_FecNacDiaActionPerformed(evt);
+                jButton_SalirRegSocioActionPerformed(evt);
             }
         });
 
-        jText_FecNacMes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_FecNacMesActionPerformed(evt);
-            }
-        });
-
-        jText_FecNacAnio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_FecNacAnioActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("Ingresar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton2.setText("Salir");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jLabel_TituloIngresarSocio.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel_TituloIngresarSocio.setFont(new java.awt.Font("Bookman Old Style", 1, 36)); // NOI18N
-        jLabel_TituloIngresarSocio.setText("Ingresar Socio");
+        jLabel_TituloRegistrarSocio.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel_TituloRegistrarSocio.setFont(new java.awt.Font("Bookman Old Style", 1, 36)); // NOI18N
+        jLabel_TituloRegistrarSocio.setText("Registrar Socio");
 
         jLabel_Rut1.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
         jLabel_Rut1.setText("-");
@@ -155,101 +119,77 @@ public class Form_AgregarSocio extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(118, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
-                        .addComponent(jText_FecNacDia, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jText_FecNacMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jText_FecNacAnio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(121, 121, 121))
+                        .addComponent(jLabel_TelRegSocio)
+                        .addGap(27, 27, 27)
+                        .addComponent(jText_TelRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel_NombreRegSocio)
+                        .addGap(34, 34, 34)
+                        .addComponent(jTextField_NombreRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                            .addComponent(jLabel_ApMaterRegSocio)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jText_ApmaternoRegSocio))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                            .addComponent(jLabel_ApPaterRegSocio)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jText_AppaternoRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel_ApellidoPaterno)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jText_Appaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jButton_IngRegSocio)
+                                .addGap(52, 52, 52)
+                                .addComponent(jButton_SalirRegSocio))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel_Nombre)
-                                .addGap(59, 59, 59)
-                                .addComponent(jTextField_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel_Rut, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel_RutRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jText_Rut, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jText_RutRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel_Rut1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jText_DV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel2))
-                                .addGap(27, 27, 27)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jText_Posicion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jText_Telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel_ApellidoMaterno)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jText_Apmaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(101, 101, 101)
-                                .addComponent(jButton1)
-                                .addGap(41, 41, 41)
-                                .addComponent(jButton2)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(jLabel_Rut1)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jText_DVRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel_TituloIngresarSocio)
+                .addContainerGap(149, Short.MAX_VALUE)
+                .addComponent(jLabel_TituloRegistrarSocio)
                 .addGap(163, 163, 163))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(jLabel_TituloIngresarSocio)
+                .addComponent(jLabel_TituloRegistrarSocio)
                 .addGap(33, 33, 33)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jText_DV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel_Rut1)
-                        .addComponent(jText_Rut, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel_Rut, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jText_DVRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_Rut1)
+                    .addComponent(jText_RutRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_RutRegSocio))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_Nombre)
-                    .addComponent(jTextField_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel_NombreRegSocio)
+                    .addComponent(jTextField_NombreRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_ApellidoPaterno)
-                    .addComponent(jText_Appaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel_ApPaterRegSocio)
+                    .addComponent(jText_AppaternoRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_ApellidoMaterno)
-                    .addComponent(jText_Apmaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel_ApMaterRegSocio)
+                    .addComponent(jText_ApmaternoRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jText_Telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jLabel_TelRegSocio)
+                    .addComponent(jText_TelRegSocio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jText_Posicion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jText_FecNacDia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jText_FecNacMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jText_FecNacAnio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addGap(52, 52, 52))
+                    .addComponent(jButton_IngRegSocio)
+                    .addComponent(jButton_SalirRegSocio))
+                .addGap(83, 83, 83))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -270,49 +210,33 @@ public class Form_AgregarSocio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jText_RutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_RutActionPerformed
-        this.jText_Rut.setText("");
-    }//GEN-LAST:event_jText_RutActionPerformed
+    private void jText_RutRegSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_RutRegSocioActionPerformed
+        this.jText_RutRegSocio.setText("");
+    }//GEN-LAST:event_jText_RutRegSocioActionPerformed
 
-    private void jTextField_NombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_NombreActionPerformed
-        this.jTextField_Nombre.setText("");
-    }//GEN-LAST:event_jTextField_NombreActionPerformed
+    private void jTextField_NombreRegSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_NombreRegSocioActionPerformed
+        this.jTextField_NombreRegSocio.setText("");
+    }//GEN-LAST:event_jTextField_NombreRegSocioActionPerformed
 
-    private void jText_AppaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_AppaternoActionPerformed
-        this.jText_Appaterno.setText("");
-    }//GEN-LAST:event_jText_AppaternoActionPerformed
+    private void jText_AppaternoRegSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_AppaternoRegSocioActionPerformed
+        this.jText_AppaternoRegSocio.setText("");
+    }//GEN-LAST:event_jText_AppaternoRegSocioActionPerformed
 
-    private void jText_ApmaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_ApmaternoActionPerformed
-        this.jText_Apmaterno.setText("");
-    }//GEN-LAST:event_jText_ApmaternoActionPerformed
+    private void jText_ApmaternoRegSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_ApmaternoRegSocioActionPerformed
+        this.jText_ApmaternoRegSocio.setText("");
+    }//GEN-LAST:event_jText_ApmaternoRegSocioActionPerformed
 
-    private void jText_TelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_TelefonoActionPerformed
-        this.jText_Telefono.setText("");
-    }//GEN-LAST:event_jText_TelefonoActionPerformed
+    private void jText_TelRegSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_TelRegSocioActionPerformed
+        this.jText_TelRegSocio.setText("");
+    }//GEN-LAST:event_jText_TelRegSocioActionPerformed
 
-    private void jText_PosicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_PosicionActionPerformed
-        this.jText_Posicion.setText("");
-    }//GEN-LAST:event_jText_PosicionActionPerformed
-
-    private void jText_FecNacDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_FecNacDiaActionPerformed
-        this.jText_FecNacDia.setText("");
-    }//GEN-LAST:event_jText_FecNacDiaActionPerformed
-
-    private void jText_FecNacMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_FecNacMesActionPerformed
-        this.jText_FecNacMes.setText("");
-    }//GEN-LAST:event_jText_FecNacMesActionPerformed
-
-    private void jText_FecNacAnioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_FecNacAnioActionPerformed
-        this.jText_FecNacAnio.setText("");
-    }//GEN-LAST:event_jText_FecNacAnioActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton_IngRegSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_IngRegSocioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButton_IngRegSocioActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton_SalirRegSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SalirRegSocioActionPerformed
         this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jButton_SalirRegSocioActionPerformed
 
 //    /**
 //     * @param args the command line arguments
@@ -350,27 +274,21 @@ public class Form_AgregarSocio extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel_ApellidoMaterno;
-    private javax.swing.JLabel jLabel_ApellidoPaterno;
-    private javax.swing.JLabel jLabel_Nombre;
-    private javax.swing.JLabel jLabel_Rut;
+    private javax.swing.JButton jButton_IngRegSocio;
+    private javax.swing.JButton jButton_SalirRegSocio;
+    private javax.swing.JLabel jLabel_ApMaterRegSocio;
+    private javax.swing.JLabel jLabel_ApPaterRegSocio;
+    private javax.swing.JLabel jLabel_NombreRegSocio;
     private javax.swing.JLabel jLabel_Rut1;
-    private javax.swing.JLabel jLabel_TituloIngresarSocio;
+    private javax.swing.JLabel jLabel_RutRegSocio;
+    private javax.swing.JLabel jLabel_TelRegSocio;
+    private javax.swing.JLabel jLabel_TituloRegistrarSocio;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField_Nombre;
-    private javax.swing.JTextField jText_Apmaterno;
-    private javax.swing.JTextField jText_Appaterno;
-    private javax.swing.JTextField jText_DV;
-    private javax.swing.JTextField jText_FecNacAnio;
-    private javax.swing.JTextField jText_FecNacDia;
-    private javax.swing.JTextField jText_FecNacMes;
-    private javax.swing.JTextField jText_Posicion;
-    private javax.swing.JTextField jText_Rut;
-    private javax.swing.JTextField jText_Telefono;
+    private javax.swing.JTextField jTextField_NombreRegSocio;
+    private javax.swing.JTextField jText_ApmaternoRegSocio;
+    private javax.swing.JTextField jText_AppaternoRegSocio;
+    private javax.swing.JTextField jText_DVRegSocio;
+    private javax.swing.JTextField jText_RutRegSocio;
+    private javax.swing.JTextField jText_TelRegSocio;
     // End of variables declaration//GEN-END:variables
 }
