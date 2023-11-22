@@ -60,7 +60,7 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
         jText_Titulo.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jText_Titulo.setForeground(new java.awt.Color(255, 255, 255));
         jText_Titulo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jText_Titulo.setText("Ingresar Jugador");
+        jText_Titulo.setText("Registrar Jugador");
         jText_Titulo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jText_TituloActionPerformed(evt);
