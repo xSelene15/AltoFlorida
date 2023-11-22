@@ -30,25 +30,7 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jText_Rut = new javax.swing.JTextField();
-        jLabel_Rut = new javax.swing.JLabel();
-        jText_DV = new javax.swing.JTextField();
-        jLabel_Nombre = new javax.swing.JLabel();
-        jLabel_ApellidoPaterno = new javax.swing.JLabel();
-        jLabel_ApellidoMaterno = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField_Nombre = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jText_Appaterno = new javax.swing.JTextField();
         jText_Apmaterno = new javax.swing.JTextField();
-        jText_Telefono = new javax.swing.JTextField();
-        jText_Posicion = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jText_FecNacDia = new javax.swing.JTextField();
-        jText_FecNacMes = new javax.swing.JTextField();
-        jText_FecNacAnio = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jText_Rut1 = new javax.swing.JTextField();
@@ -80,92 +62,9 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 102));
         jPanel2.setPreferredSize(new java.awt.Dimension(600, 400));
 
-        jText_Rut.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_RutActionPerformed(evt);
-            }
-        });
-
-        jLabel_Rut.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel_Rut.setText("Rut");
-
-        jLabel_Nombre.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel_Nombre.setText("Nombre");
-
-        jLabel_ApellidoPaterno.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel_ApellidoPaterno.setText("Apellido Paterno ");
-
-        jLabel_ApellidoMaterno.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel_ApellidoMaterno.setText("Apellido Materno");
-
-        jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel1.setText("Teléfono");
-
-        jTextField_Nombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_NombreActionPerformed(evt);
-            }
-        });
-
-        jLabel2.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel2.setText("Posición");
-
-        jText_Appaterno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_AppaternoActionPerformed(evt);
-            }
-        });
-
         jText_Apmaterno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jText_ApmaternoActionPerformed(evt);
-            }
-        });
-
-        jText_Telefono.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_TelefonoActionPerformed(evt);
-            }
-        });
-
-        jText_Posicion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_PosicionActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setFont(new java.awt.Font("Bookman Old Style", 1, 14)); // NOI18N
-        jLabel3.setText("Fecha Nacimiento");
-
-        jText_FecNacDia.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_FecNacDiaActionPerformed(evt);
-            }
-        });
-
-        jText_FecNacMes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_FecNacMesActionPerformed(evt);
-            }
-        });
-
-        jText_FecNacAnio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText_FecNacAnioActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("Enviar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton2.setText("Salir");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
             }
         });
 
@@ -389,58 +288,14 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel_ApellidoPaterno)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jText_Appaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel_Nombre)
-                                .addGap(59, 59, 59)
-                                .addComponent(jTextField_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel2))
-                                .addGap(27, 27, 27)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jText_Posicion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jText_Telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel_ApellidoMaterno)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jText_Apmaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap())
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton1)
-                            .addComponent(jLabel3))
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jText_FecNacDia, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(17, 17, 17)
-                                .addComponent(jText_FecNacMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jText_FecNacAnio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(121, 121, 121))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(38, 38, 38)
-                                .addComponent(jButton2)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel_Rut, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jText_Rut, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jText_DV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                .addComponent(jText_Apmaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel2Layout.createSequentialGroup()
                     .addContainerGap()
@@ -450,44 +305,11 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(81, 81, 81)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jText_Rut, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jText_DV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel4))
-                    .addComponent(jLabel_Rut, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_Nombre)
-                    .addComponent(jTextField_Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_ApellidoPaterno)
-                    .addComponent(jText_Appaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_ApellidoMaterno)
-                    .addComponent(jText_Apmaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jText_Telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jText_Posicion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jText_FecNacDia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jText_FecNacMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jText_FecNacAnio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addGap(52, 52, 52))
+                .addGap(84, 84, 84)
+                .addComponent(jLabel4)
+                .addGap(62, 62, 62)
+                .addComponent(jText_Apmaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel2Layout.createSequentialGroup()
                     .addContainerGap()
@@ -528,49 +350,9 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jText_RutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_RutActionPerformed
-        this.jText_Rut.setText("");
-    }//GEN-LAST:event_jText_RutActionPerformed
-
-    private void jTextField_NombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_NombreActionPerformed
-        this.jTextField_Nombre.setText("");
-    }//GEN-LAST:event_jTextField_NombreActionPerformed
-
-    private void jText_TelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_TelefonoActionPerformed
-        this.jText_Telefono.setText("");
-    }//GEN-LAST:event_jText_TelefonoActionPerformed
-
-    private void jText_AppaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_AppaternoActionPerformed
-        this.jText_Appaterno.setText("");
-    }//GEN-LAST:event_jText_AppaternoActionPerformed
-
     private void jText_ApmaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_ApmaternoActionPerformed
         this.jText_Apmaterno.setText("");
     }//GEN-LAST:event_jText_ApmaternoActionPerformed
-
-    private void jText_PosicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_PosicionActionPerformed
-        this.jText_Posicion.setText("");
-    }//GEN-LAST:event_jText_PosicionActionPerformed
-
-    private void jText_FecNacDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_FecNacDiaActionPerformed
-        this.jText_FecNacDia.setText("");
-    }//GEN-LAST:event_jText_FecNacDiaActionPerformed
-
-    private void jText_FecNacMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_FecNacMesActionPerformed
-        this.jText_FecNacMes.setText("");
-    }//GEN-LAST:event_jText_FecNacMesActionPerformed
-
-    private void jText_FecNacAnioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_FecNacAnioActionPerformed
-        this.jText_FecNacAnio.setText("");
-    }//GEN-LAST:event_jText_FecNacAnioActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jText_Rut1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText_Rut1ActionPerformed
         // TODO add your handling code here:
@@ -652,51 +434,33 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabel_ApellidoMaterno;
     private javax.swing.JLabel jLabel_ApellidoMaterno1;
-    private javax.swing.JLabel jLabel_ApellidoPaterno;
     private javax.swing.JLabel jLabel_ApellidoPaterno1;
-    private javax.swing.JLabel jLabel_Nombre;
     private javax.swing.JLabel jLabel_Nombre1;
-    private javax.swing.JLabel jLabel_Rut;
     private javax.swing.JLabel jLabel_Rut1;
     private javax.swing.JLabel jLabel_TituloRegistrarSocio1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField_Nombre;
     private javax.swing.JTextField jTextField_Nombre1;
     private javax.swing.JTextField jText_Apmaterno;
     private javax.swing.JTextField jText_Apmaterno1;
-    private javax.swing.JTextField jText_Appaterno;
     private javax.swing.JTextField jText_Appaterno1;
-    private javax.swing.JTextField jText_DV;
     private javax.swing.JTextField jText_DV1;
-    private javax.swing.JTextField jText_FecNacAnio;
     private javax.swing.JTextField jText_FecNacAnio1;
-    private javax.swing.JTextField jText_FecNacDia;
     private javax.swing.JTextField jText_FecNacDia1;
-    private javax.swing.JTextField jText_FecNacMes;
     private javax.swing.JTextField jText_FecNacMes1;
-    private javax.swing.JTextField jText_Posicion;
     private javax.swing.JTextField jText_Posicion1;
-    private javax.swing.JTextField jText_Rut;
     private javax.swing.JTextField jText_Rut1;
-    private javax.swing.JTextField jText_Telefono;
     private javax.swing.JTextField jText_Telefono1;
     // End of variables declaration//GEN-END:variables
 }

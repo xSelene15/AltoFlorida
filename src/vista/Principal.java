@@ -94,6 +94,11 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuItem_EliminarPlantel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/delete_delete_deleteusers_delete_male_user_maleclient_2348.png"))); // NOI18N
         jMenuItem_EliminarPlantel.setText("Eliminar");
+        jMenuItem_EliminarPlantel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_EliminarPlantelActionPerformed(evt);
+            }
+        });
         jMenu_Plantel.add(jMenuItem_EliminarPlantel);
 
         jMenuBar1.add(jMenu_Plantel);
@@ -121,6 +126,11 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuItem_EliminarSocio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/delete_delete_deleteusers_delete_male_user_maleclient_2348.png"))); // NOI18N
         jMenuItem_EliminarSocio.setText("Eliminar");
+        jMenuItem_EliminarSocio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem_EliminarSocioActionPerformed(evt);
+            }
+        });
         jMenu_Socio.add(jMenuItem_EliminarSocio);
 
         jMenuBar1.add(jMenu_Socio);
@@ -197,8 +207,17 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem_RegistrarPlantelActionPerformed
 
     private void jMenuItem_RegistrarSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_RegistrarSocioActionPerformed
-        // TODO add your handling code here:
+        Form_AgregarSocio socio = new Form_AgregarSocio();
+        socio.show();
     }//GEN-LAST:event_jMenuItem_RegistrarSocioActionPerformed
+
+    private void jMenuItem_EliminarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarPlantelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem_EliminarPlantelActionPerformed
+
+    private void jMenuItem_EliminarSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarSocioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem_EliminarSocioActionPerformed
 
     /**
      * @param args the command line arguments
