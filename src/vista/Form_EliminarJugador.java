@@ -8,12 +8,12 @@ package vista;
  *
  * @author jjlet
  */
-public class Form_BuscarJugador extends javax.swing.JFrame {
+public class Form_EliminarJugador extends javax.swing.JFrame {
 
     /**
-     * Creates new form Form_BuscarJugador
+     * Creates new form Form_EliminarJugador
      */
-    public Form_BuscarJugador() {
+    public Form_EliminarJugador() {
         initComponents();
     }
 
@@ -26,34 +26,26 @@ public class Form_BuscarJugador extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel_TituloBuscarPlantel = new javax.swing.JLabel();
-        jTextField_BuscarPlantel = new javax.swing.JTextField();
+        jLabel_TituloEliminPlantel = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable_BuscarPlantel = new javax.swing.JTable();
-        jButton_BuscarPlantel = new javax.swing.JButton();
-
-        jLabel4.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel4.setFont(new java.awt.Font("Bookman Old Style", 1, 36)); // NOI18N
-        jLabel4.setText("Ingresar Socio");
+        jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 102));
 
-        jLabel_TituloBuscarPlantel.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel_TituloBuscarPlantel.setFont(new java.awt.Font("Bookman Old Style", 1, 36)); // NOI18N
-        jLabel_TituloBuscarPlantel.setText("Buscar Plantel");
+        jLabel_TituloEliminPlantel.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel_TituloEliminPlantel.setFont(new java.awt.Font("Bookman Old Style", 1, 36)); // NOI18N
+        jLabel_TituloEliminPlantel.setText("Eliminar Plantel");
 
-        jTextField_BuscarPlantel.setText("Ingrese el nombre...");
-        jTextField_BuscarPlantel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_BuscarPlantelActionPerformed(evt);
-            }
-        });
+        jTextField1.setText("Ingrese el nombre...");
 
-        jTable_BuscarPlantel.setModel(new javax.swing.table.DefaultTableModel(
+        jButton1.setText("Buscar");
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -72,46 +64,39 @@ public class Form_BuscarJugador extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable_BuscarPlantel);
-
-        jButton_BuscarPlantel.setText("Buscar");
-        jButton_BuscarPlantel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_BuscarPlantelActionPerformed(evt);
-            }
-        });
+        jScrollPane1.setViewportView(jTable1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(203, 203, 203)
-                        .addComponent(jTextField_BuscarPlantel, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton_BuscarPlantel)
-                        .addGap(0, 112, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel_TituloBuscarPlantel)
-                .addGap(180, 180, 180))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(115, 115, 115))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(jLabel_TituloEliminPlantel)
+                .addGap(0, 195, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jLabel_TituloBuscarPlantel)
+                .addGap(33, 33, 33)
+                .addComponent(jLabel_TituloEliminPlantel)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField_BuscarPlantel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton_BuscarPlantel, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -130,14 +115,6 @@ public class Form_BuscarJugador extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField_BuscarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_BuscarPlantelActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_BuscarPlantelActionPerformed
-
-    private void jButton_BuscarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_BuscarPlantelActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_BuscarPlantelActionPerformed
-
 //    /**
 //     * @param args the command line arguments
 //     */
@@ -155,31 +132,30 @@ public class Form_BuscarJugador extends javax.swing.JFrame {
 //                }
 //            }
 //        } catch (ClassNotFoundException ex) {
-//            java.util.logging.Logger.getLogger(Form_BuscarJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(Form_EliminarJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (InstantiationException ex) {
-//            java.util.logging.Logger.getLogger(Form_BuscarJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(Form_EliminarJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (IllegalAccessException ex) {
-//            java.util.logging.Logger.getLogger(Form_BuscarJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(Form_EliminarJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-//            java.util.logging.Logger.getLogger(Form_BuscarJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//            java.util.logging.Logger.getLogger(Form_EliminarJugador.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
 //        }
 //        //</editor-fold>
 //
 //        /* Create and display the form */
 //        java.awt.EventQueue.invokeLater(new Runnable() {
 //            public void run() {
-//                new Form_BuscarJugador().setVisible(true);
+//                new Form_EliminarJugador().setVisible(true);
 //            }
 //        });
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton_BuscarPlantel;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel_TituloBuscarPlantel;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel_TituloEliminPlantel;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable_BuscarPlantel;
-    private javax.swing.JTextField jTextField_BuscarPlantel;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
