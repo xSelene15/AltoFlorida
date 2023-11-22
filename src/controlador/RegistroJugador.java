@@ -31,7 +31,7 @@ public class RegistroJugador {
             stmt.setString(3, jugador.getpNombre());
             stmt.setString(4, jugador.getApPaterno());
             stmt.setString(5, jugador.getApMaterno());
-            stmt.setInt(6, jugador.getPosicion());
+            stmt.setString(6, jugador.getPosicion());
             stmt.setInt(7, jugador.getTelefono());
             stmt.setDate(8, new java.sql.Date(jugador.getFechNac().getTime()));
             stmt.setInt(9, jugador.getNumGol());
@@ -84,7 +84,7 @@ public class RegistroJugador {
             stmt.setString(3, jugador.getpNombre());
             stmt.setString(4, jugador.getApPaterno());
             stmt.setString(5, jugador.getApMaterno());
-            stmt.setInt(6, jugador.getPosicion());
+            stmt.setString(6, jugador.getPosicion());
             stmt.setInt(7, jugador.getTelefono());
             stmt.setDate(8, new java.sql.Date(jugador.getFechNac().getTime()));
             stmt.setInt(9, jugador.getNumGol());
@@ -122,7 +122,7 @@ public class RegistroJugador {
                 jugador.setpNombre(rs.getString("pnombre"));
                 jugador.setApPaterno(rs.getString("appaterno"));
                 jugador.setApMaterno(rs.getString("apmaterno"));
-                jugador.setPosicion(rs.getInt("posicion"));
+                jugador.setPosicion(rs.getString("posicion"));
                 jugador.setTelefono(rs.getInt("telefono"));
                 jugador.setFechNac(rs.getDate("fechanacimiento"));
                 jugador.setNumGol(rs.getInt("numerogoles"));
@@ -159,7 +159,7 @@ public class RegistroJugador {
                 jugador.setpNombre(rs.getString("pnombre"));
                 jugador.setApPaterno(rs.getString("appaterno"));
                 jugador.setApMaterno(rs.getString("apmaterno"));
-                jugador.setPosicion(rs.getInt("posicion"));
+                jugador.setPosicion(rs.getString("posicion"));
                 jugador.setTelefono(rs.getInt("telefono"));
                 jugador.setFechNac(rs.getDate("fechanacimiento"));
                 jugador.setNumGol(rs.getInt("numerogoles"));
