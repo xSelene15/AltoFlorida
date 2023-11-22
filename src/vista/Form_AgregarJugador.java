@@ -63,6 +63,7 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
         jComboBox_Division = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Agregar Jugador");
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 102));
         jPanel3.setPreferredSize(new java.awt.Dimension(600, 400));
@@ -148,7 +149,7 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
             }
         });
 
-        jButton_Enviar.setText("Enviar");
+        jButton_Enviar.setText("Agregar");
         jButton_Enviar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_EnviarActionPerformed(evt);
@@ -457,6 +458,7 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
         } catch (Exception ex) {
             Logger.getLogger(Form_AgregarSocio.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
     }//GEN-LAST:event_jButton_EnviarActionPerformed
 
     private void jButton_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SalirActionPerformed

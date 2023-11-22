@@ -51,6 +51,7 @@ public class Form_AgregarSocio extends javax.swing.JFrame {
         jText_direccionRegSocio = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Registro Socio");
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 102));
         jPanel2.setPreferredSize(new java.awt.Dimension(600, 400));
