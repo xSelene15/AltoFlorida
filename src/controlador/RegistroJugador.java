@@ -34,7 +34,8 @@ public class RegistroJugador {
             stmt.setString(6, jugador.getPosicion());
             stmt.setInt(7, jugador.getTelefono());
             stmt.setDate(8, new java.sql.Date(jugador.getFechNac().getTime()));
-            stmt.setInt(9, jugador.getNumGol());
+            stmt.setString(9, jugador.getDivision());
+            stmt.setInt(10, jugador.getNumGol());
             
             stmt.executeUpdate();
             stmt.close();
@@ -87,9 +88,10 @@ public class RegistroJugador {
             stmt.setString(6, jugador.getPosicion());
             stmt.setInt(7, jugador.getTelefono());
             stmt.setDate(8, new java.sql.Date(jugador.getFechNac().getTime()));
-            stmt.setInt(9, jugador.getNumGol());
+            stmt.setString(9, jugador.getDivision());
+            stmt.setInt(10, jugador.getNumGol());
          
-            stmt.setInt(10,jugador.getCodJugador());
+            stmt.setInt(11,jugador.getCodJugador());
             
             stmt.executeUpdate();
             stmt.close();
@@ -102,7 +104,7 @@ public class RegistroJugador {
         
     }
     
-    public Jugador buscarPorId(int codJugador) throws Exception
+    public Jugador buscarPorCod(int codJugador) throws Exception
     {
         Jugador jugador = new Jugador();
         try {
@@ -125,6 +127,7 @@ public class RegistroJugador {
                 jugador.setPosicion(rs.getString("posicion"));
                 jugador.setTelefono(rs.getInt("telefono"));
                 jugador.setFechNac(rs.getDate("fechanacimiento"));
+                jugador.setDivision("division");
                 jugador.setNumGol(rs.getInt("numerogoles"));
                
             }
@@ -162,6 +165,7 @@ public class RegistroJugador {
                 jugador.setPosicion(rs.getString("posicion"));
                 jugador.setTelefono(rs.getInt("telefono"));
                 jugador.setFechNac(rs.getDate("fechanacimiento"));
+                jugador.setDivision("division");
                 jugador.setNumGol(rs.getInt("numerogoles"));
                  
                 lista.add(jugador);

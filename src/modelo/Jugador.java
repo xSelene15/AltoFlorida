@@ -14,16 +14,18 @@ public class Jugador extends Persona {
     private int codJugador; 
     private String posicion;
     private Date fechNac;
+    private String division;
     private int numGol;
 
     public Jugador() {
     }
 
-    public Jugador(int codJugador, String posicion, Date fechNac, int numGol, int rutPersona, String dv, String pNombre, String apPaterno, String apMaterno, int telefono) {
+    public Jugador(int codJugador, String posicion, Date fechNac, String division, int numGol, int rutPersona, String dv, String pNombre, String apPaterno, String apMaterno, int telefono) {
         super(rutPersona, dv, pNombre, apPaterno, apMaterno, telefono);
         this.codJugador = codJugador;
         this.posicion = posicion;
         this.fechNac = fechNac;
+        this.division = division;
         this.numGol = numGol;
     }
 
@@ -51,6 +53,14 @@ public class Jugador extends Persona {
         this.fechNac = fechNac;
     }
 
+    public String getDivision() {
+        return division;
+    }
+
+    public void setDivision(String division) {
+        this.division = division;
+    }
+
     public int getNumGol() {
         return numGol;
     }
@@ -59,5 +69,5 @@ public class Jugador extends Persona {
         this.numGol = numGol;
     }
 
-  
+   
 }
