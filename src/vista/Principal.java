@@ -179,7 +179,8 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem_BuscarSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_BuscarSocioActionPerformed
-        // TODO add your handling code here:
+        Form_BuscarSocio search1 = new Form_BuscarSocio();
+        search1.show();
     }//GEN-LAST:event_jMenuItem_BuscarSocioActionPerformed
 
     private void jMenuItem_ExtrInforActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ExtrInforActionPerformed
@@ -191,14 +192,13 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem_BuscarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_BuscarPlantelActionPerformed
-        Form_BuscarJugador search = new Form_BuscarJugador();
-        search.show();
+        Form_BuscarJugador search2 = new Form_BuscarJugador();
+        search2.show();
        
     }//GEN-LAST:event_jMenuItem_BuscarPlantelActionPerformed
 
     private void jMenuItem_HorarioPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_HorarioPartidoActionPerformed
-    
-        
+          
     }//GEN-LAST:event_jMenuItem_HorarioPartidoActionPerformed
 
     private void jMenuItem_RegistrarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_RegistrarPlantelActionPerformed

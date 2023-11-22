@@ -4,6 +4,13 @@
  */
 package vista;
 
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.table.DefaultTableModel;
+import controlador.RegistroJugador;
+import modelo.Jugador;
+
 /**
  *
  * @author jjlet
@@ -48,6 +55,12 @@ public class Form_BuscarJugador extends javax.swing.JFrame {
         jLabel_TituloBuscarPlantel.setText("Buscar Plantel");
 
         jTextField_BuscarPlantel.setText("Ingrese el nombre...");
+        jTextField_BuscarPlantel.setToolTipText("");
+        jTextField_BuscarPlantel.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField_BuscarPlantelFocusGained(evt);
+            }
+        });
         jTextField_BuscarPlantel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_BuscarPlantelActionPerformed(evt);
@@ -56,17 +69,17 @@ public class Form_BuscarJugador extends javax.swing.JFrame {
 
         jTable_BuscarPlantel.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Id. Jugador", "Rut", "Nombre", "Posicion"
+                "Rut", "Nombre", "Primer Apellido", "Segundo Apellido", "Posicion", "Division"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -148,14 +161,68 @@ public class Form_BuscarJugador extends javax.swing.JFrame {
     private void jTextField_BuscarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_BuscarPlantelActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_BuscarPlantelActionPerformed
-
+    
     private void jButton_BuscarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_BuscarPlantelActionPerformed
-        // TODO add your handling code here:
+        String nombre,apellido1, apellido2, posicion, division;
+        int rut,ruttab;
+        
+        RegistroJugador reg = new RegistroJugador();
+        DefaultTableModel modelo = (DefaultTableModel) this.jTable_BuscarPlantel.getModel();
+        
+        try {
+            rut = Integer.parseInt(this.jTextField_BuscarPlantel.getText());
+        } catch (Exception e) {
+            rut = 0;
+        }
+        
+        modelo.setRowCount(0);
+
+        if (rut == 0) { //buscar todos
+
+            ArrayList<Jugador> lista = null;
+            try {
+                lista = reg.buscarTodos();
+            } catch (Exception ex) {
+                Logger.getLogger(Form_BuscarJugador.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            for (Jugador jugador : lista) {
+                ruttab = jugador.getRutPersona();
+                nombre = jugador.getpNombre();
+                apellido1 = jugador.getApPaterno();
+                apellido2 = jugador.getApMaterno();
+                posicion = jugador.getPosicion();
+                division = jugador.getDivision();
+
+                modelo.addRow(new Object[]{ruttab, nombre, apellido1, apellido2, posicion,division});
+            }
+        } else { //buscar por rut
+
+            Jugador jugador = null;
+            try {
+                jugador = reg.buscarPorRut(rut);
+            } catch (Exception ex) {
+                Logger.getLogger(Form_AgregarJugador.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                ruttab = jugador.getRutPersona();
+                nombre = jugador.getpNombre();
+                apellido1 = jugador.getApPaterno();
+                apellido2 = jugador.getApMaterno();
+                posicion = jugador.getPosicion();
+                division = jugador.getDivision();
+
+                modelo.addRow(new Object[]{ruttab, nombre, apellido1, apellido2, posicion,division});
+        }
+
     }//GEN-LAST:event_jButton_BuscarPlantelActionPerformed
 
     private void jButton_AtrasBuscPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AtrasBuscPlantelActionPerformed
         this.dispose();
     }//GEN-LAST:event_jButton_AtrasBuscPlantelActionPerformed
+
+    private void jTextField_BuscarPlantelFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField_BuscarPlantelFocusGained
+        this.jTextField_BuscarPlantel.setText("");
+    }//GEN-LAST:event_jTextField_BuscarPlantelFocusGained
 
 //    /**
 //     * @param args the command line arguments

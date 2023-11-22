@@ -134,6 +134,41 @@ public class RegistroSocio {
          return socio;
     }
     
+     public Socio buscarPorRut(int rut) throws Exception
+    {
+        Socio socio = new Socio();
+        try {
+            Conexion con = new Conexion();
+            Connection cnx = con.obtenerConexionOracle();
+            String query = "Select * from jugador where rut = ?";
+            PreparedStatement stmt = cnx.prepareStatement(query);
+            
+            stmt.setInt(1,rut);
+            
+            ResultSet rs = stmt.executeQuery();
+            
+            if (rs.next()) {
+                socio.setCodSocio(rs.getInt("codsocio"));
+                socio.setRutPersona(rs.getInt("rutsocio"));
+                socio.setDv(rs.getString("dv"));
+                socio.setpNombre(rs.getString("pnombre"));
+                socio.setApPaterno(rs.getString("appaterno"));
+                socio.setApMaterno(rs.getString("apmaterno"));
+                socio.setDireccion(rs.getString("direccion"));
+                
+               
+            }
+            rs.close();
+            stmt.close();
+            cnx.close();
+            
+        } catch (SQLException e) {
+            System.out.println("Error de SQL al listar por Rut socio" + e.getMessage());
+            
+        }
+         return socio;
+    }
+    
     public ArrayList<Socio> buscarTodos() throws Exception
     {
         ArrayList<Socio> lista = new ArrayList<>();

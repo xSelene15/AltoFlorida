@@ -142,6 +142,44 @@ public class RegistroJugador {
          return jugador;
     }
     
+    public Jugador buscarPorRut(int rut) throws Exception
+    {
+        Jugador jugador = new Jugador();
+        try {
+            Conexion con = new Conexion();
+            Connection cnx = con.obtenerConexionOracle();
+            String query = "Select * from jugador where rut = ?";
+            PreparedStatement stmt = cnx.prepareStatement(query);
+            
+            stmt.setInt(1,rut);
+            
+            ResultSet rs = stmt.executeQuery();
+            
+            if (rs.next()) {
+                jugador.setCodJugador(rs.getInt("codjugador"));
+                jugador.setRutPersona(rs.getInt("rutjugador"));
+                jugador.setDv(rs.getString("dv"));
+                jugador.setpNombre(rs.getString("pnombre"));
+                jugador.setApPaterno(rs.getString("appaterno"));
+                jugador.setApMaterno(rs.getString("apmaterno"));
+                jugador.setPosicion(rs.getString("posicion"));
+                jugador.setTelefono(rs.getInt("telefono"));
+                jugador.setFechNac(rs.getDate("fechanacimiento"));
+                jugador.setDivision("division");
+                jugador.setNumGol(rs.getInt("numerogoles"));
+               
+            }
+            rs.close();
+            stmt.close();
+            cnx.close();
+            
+        } catch (SQLException e) {
+            System.out.println("Error de SQL al listar por Rut Jugador" + e.getMessage());
+            
+        }
+         return jugador;
+    }
+    
     public ArrayList<Jugador> buscarTodos() throws Exception
     {
         ArrayList<Jugador> lista = new ArrayList<>();

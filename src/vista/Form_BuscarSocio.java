@@ -4,6 +4,13 @@
  */
 package vista;
 
+import controlador.RegistroSocio;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.table.DefaultTableModel;
+import modelo.Socio;
+
 /**
  *
  * @author jjlet
@@ -43,8 +50,18 @@ public class Form_BuscarSocio extends javax.swing.JFrame {
         jLabel_TituloBuscarSocio.setText("Buscar Socio");
 
         jTextField_BuscarSocio.setText("Ingresar el nombre...");
+        jTextField_BuscarSocio.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField_BuscarSocioFocusGained(evt);
+            }
+        });
 
         jButton_BuscarSocio.setText("Buscar");
+        jButton_BuscarSocio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_BuscarSocioActionPerformed(evt);
+            }
+        });
 
         jButton_AtrasBuscSocio.setText("Atras");
         jButton_AtrasBuscSocio.addActionListener(new java.awt.event.ActionListener() {
@@ -131,6 +148,63 @@ public class Form_BuscarSocio extends javax.swing.JFrame {
     private void jButton_AtrasBuscSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AtrasBuscSocioActionPerformed
         this.dispose();
     }//GEN-LAST:event_jButton_AtrasBuscSocioActionPerformed
+
+    private void jTextField_BuscarSocioFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField_BuscarSocioFocusGained
+         this.jTextField_BuscarSocio.setText("");
+    }//GEN-LAST:event_jTextField_BuscarSocioFocusGained
+
+    private void jButton_BuscarSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_BuscarSocioActionPerformed
+        String nombre,apellido1, apellido2, direccion;
+        int rut,ruttab;
+        
+        RegistroSocio reg = new RegistroSocio();
+        DefaultTableModel modelo = (DefaultTableModel) this.jTable_BuscarSocio.getModel();
+        
+        try {
+            rut = Integer.parseInt(this.jTextField_BuscarSocio.getText());
+        } catch (Exception e) {
+            rut = 0;
+        }
+        
+        modelo.setRowCount(0);
+
+        if (rut == 0) { //buscar todos
+
+            ArrayList<Socio> lista = null;
+            try {
+                lista = reg.buscarTodos();
+            } catch (Exception ex) {
+                Logger.getLogger(Form_BuscarSocio.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            for (Socio socio : lista) {
+                ruttab = socio.getRutPersona();
+                nombre = socio.getpNombre();
+                apellido1 = socio.getApPaterno();
+                apellido2 = socio.getApMaterno();
+                direccion = socio.getDireccion();
+
+                modelo.addRow(new Object[]{ruttab, nombre, apellido1, apellido2,direccion});
+            }
+        } else { //buscar por rut
+
+            Socio socio = null;
+            try {
+                socio = reg.buscarPorRut(rut);
+            } catch (Exception ex) {
+                Logger.getLogger(Form_AgregarJugador.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                ruttab = jugador.getRutPersona();
+                nombre = jugador.getpNombre();
+                apellido1 = jugador.getApPaterno();
+                apellido2 = jugador.getApMaterno();
+                posicion = jugador.getPosicion();
+                division = jugador.getDivision();
+
+                modelo.addRow(new Object[]{ruttab, nombre, apellido1, apellido2, posicion,division});
+        }
+
+    }//GEN-LAST:event_jButton_BuscarSocioActionPerformed
 //
 //    /**
 //     * @param args the command line arguments

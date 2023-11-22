@@ -108,11 +108,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Ingresar el nombre..."/>
           </Properties>
+          <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextField_BuscarSocioFocusGained"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton_BuscarSocio">
           <Properties>
             <Property name="text" type="java.lang.String" value="Buscar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_BuscarSocioActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton_AtrasBuscSocio">
           <Properties>

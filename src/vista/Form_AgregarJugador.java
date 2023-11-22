@@ -417,8 +417,8 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
             return;
         }
         
-        posicion = this.jComboBox_Posicion.getToolTipText();
-        division = this.jComboBox_Division.getToolTipText();
+        posicion = this.jComboBox_Posicion.getSelectedItem().toString();
+        division = this.jComboBox_Division.getSelectedItem().toString();
         
         dia = this.jText_FecNacDia.getText();
         mes = this.jText_FecNacMes.getText();
@@ -442,7 +442,7 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
             return;
         }
  
-        Jugador jugador = new Jugador(0, posicion, fecha, division, 0, rut, dv, nombre, appaterno, apmaterno,telefono);
+        Jugador jugador = new Jugador(0,posicion, fecha, division, 0, rut, dv, nombre, appaterno, apmaterno,telefono);
         
         RegistroJugador reg = new RegistroJugador();
         
@@ -470,11 +470,11 @@ public class Form_AgregarJugador extends javax.swing.JFrame {
     }//GEN-LAST:event_jText_DVJugadorActionPerformed
 
     private void jComboBox_PosicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox_PosicionActionPerformed
-        this.jComboBox_Posicion.setToolTipText("");
+        this.jComboBox_Posicion.getSelectedItem();
     }//GEN-LAST:event_jComboBox_PosicionActionPerformed
 
     private void jComboBox_DivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox_DivisionActionPerformed
-        this.jComboBox_Division.setToolTipText("");
+        this.jComboBox_Division.getSelectedItem();
     }//GEN-LAST:event_jComboBox_DivisionActionPerformed
 
 //    /**
