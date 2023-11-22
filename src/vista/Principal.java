@@ -185,7 +185,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
-        
+        Form_AgregarJugador jugador = new Form_AgregarJugador();
+        jugador.show();
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
     /**
