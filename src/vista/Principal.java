@@ -184,7 +184,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem_BuscarSocioActionPerformed
 
     private void jMenuItem_ExtrInforActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_ExtrInforActionPerformed
-        // TODO add your handling code here:
+        Form_Informacion info = new Form_Informacion();
+        info.show();
     }//GEN-LAST:event_jMenuItem_ExtrInforActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
@@ -198,7 +199,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem_BuscarPlantelActionPerformed
 
     private void jMenuItem_HorarioPartidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_HorarioPartidoActionPerformed
-          
+        Form_Partido partido = new Form_Partido();
+        partido.show();
     }//GEN-LAST:event_jMenuItem_HorarioPartidoActionPerformed
 
     private void jMenuItem_RegistrarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_RegistrarPlantelActionPerformed
@@ -212,11 +214,13 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem_RegistrarSocioActionPerformed
 
     private void jMenuItem_EliminarPlantelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarPlantelActionPerformed
-        // TODO add your handling code here:
+        Form_EliminarJugador elimJug = new Form_EliminarJugador();
+        elimJug.show();
     }//GEN-LAST:event_jMenuItem_EliminarPlantelActionPerformed
 
     private void jMenuItem_EliminarSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem_EliminarSocioActionPerformed
-        // TODO add your handling code here:
+        Form_EliminarSocio elimSoc = new Form_EliminarSocio();
+        elimSoc.show();
     }//GEN-LAST:event_jMenuItem_EliminarSocioActionPerformed
 
     /**
