@@ -4,12 +4,11 @@
  */
 package vista;
 
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import controlador.RegistroSocio;
-import modelo.socio;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import modelo.Socio;
 /**
  *
  * @author Orion
@@ -325,10 +324,19 @@ public class Form_AgregarSocio extends javax.swing.JFrame {
         
         RegistroSocio reg = new RegistroSocio();
         
-        
-        
-    }                                           
-                                   
+        try {
+            if (reg.buscarPorCod(socio.getCodSocio()).getpNombre()== null) {
+                if (reg.agregar(socio)) {
+                    JOptionPane.showMessageDialog(this, "Se agrego el libro", "Informacion", JOptionPane.INFORMATION_MESSAGE);
+                }else{
+                    JOptionPane.showMessageDialog(this, "NO Se agrego el libro", "Informacion", JOptionPane.INFORMATION_MESSAGE);
+                }
+            }else{
+                JOptionPane.showMessageDialog(this, "El libro ya existe", "Informacion", JOptionPane.INFORMATION_MESSAGE);
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(Form_AgregarSocio.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton_IngRegSocioActionPerformed
 
     private void jButton_SalirRegSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SalirRegSocioActionPerformed
